@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COSY AIRCONDITIONERS — Premium Climate Control</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar navbar-expand-lg fixed-top " id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="brand-cosy">COSY</span>
+        <span class="brand-ac">AC</span>
+      </a>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <i class="bi bi-grid-3x3-gap-fill text-cyan"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto gap-2 ">
+          <li class="nav-item"><a class="nav-link btn-brand" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle " href="#" id="brandsDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Brands
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-dark custom-dropdown">
+              <li><a class="dropdown-item" href="brand.html#all">All Brands</a></li>
+              <li><a class="dropdown-item" href="brand.html#samsung">Samsung</a></li>
+              <li><a class="dropdown-item" href="brand.html#lg">LG</a></li>
+              <li><a class="dropdown-item" href="brand.html#daikin">Daikin</a></li>
+              <li><a class="dropdown-item" href="brand.html#whirlpool">Whirlpool</a></li>
+              <li><a class="dropdown-item" href="brand.html#haier">Haier</a></li>
+              <li><a class="dropdown-item" href="brand.html#gree">Gree</a></li>
+            </ul>
+
+          </li>
+          <li class="nav-item"><a class="nav-link" href="compare.html">Compare</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Total: $<span id="total">0</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+    <div class="container h-100 d-flex align-items-center">
+      <div class="row align-items-center w-100">
+        <div class="col-lg-6" data-aos="fade-right">
+          <p class="hero-label">NEXT-GEN CLIMATE CONTROL</p>
+          <h1 class="hero-title">Feel the<br /><span class="glow-text">Perfect</span><br />Temperature</h1>
+          <p class="hero-sub">Premium air conditioners from the world's most trusted brands. Smart, silent, and
+            supremely efficient.</p>
+          <div class="d-flex gap-3 mt-4">
+            <a href="brand.html" class="btn btn-glow">Explore Brands</a>
+            <a href="#products" class="btn btn-outline-glow">View Products</a>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center mt-5 mt-lg-0">
+          <div class="hero-ac-visual">
+            <div class="ac-unit-display">
+              <div class="ac-vent-bar" style="animation-delay:0s"></div>
+              <div class="ac-vent-bar" style="animation-delay:.15s"></div>
+              <div class="ac-vent-bar" style="animation-delay:.3s"></div>
+              <div class="ac-vent-bar" style="animation-delay:.45s"></div>
+              <div class="ac-vent-bar" style="animation-delay:.6s"></div>
+              <div class="ac-display-panel">
+                <span class="ac-temp-display" id="heroTemp">22°C</span>
+                <div class="ac-mode-dots">
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+            </div>
+            <div class="cool-wave wave1"></div>
+            <div class="cool-wave wave2"></div>
+            <div class="cool-wave wave3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Stats Bar -->
+    <div class="stats-bar container">
+      <div class="row text-center g-3">
+        <div class="col-6 col-md-3">
+          <div class="stat-item"><span class="stat-num">500+</span><span class="stat-label">Models</span></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item"><span class="stat-num">10+</span><span class="stat-label">Brands</span></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item"><span class="stat-num">50K+</span><span class="stat-label">Customers</span></div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-item"><span class="stat-num">24/7</span><span class="stat-label">Support</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BRANDS ========== -->
+  <section id="brands" class="section-dark py-5">
+    <div class="container">
+      <div class="section-header text-center mb-5">
+        <p class="section-label">CHOOSE YOUR BRAND</p>
+        <h2 class="section-title">Top <span class="glow-text">Brands</span></h2>
+        <p class="section-sub">Click a brand to filter our product catalog</p>
+      </div>
+
+      <!-- Brand Filter Buttons -->
+      <!-- Buttons ko remove mat karein, bas d-none class laga dein taake ye chhup jayein -->
+      <div class="d-flex flex-wrap justify-content-center gap-3 mb-5 d-none" id="brandFilters">
+        <button class="btn btn-brand active" data-brand="all">All Brands</button>
+        <button class="btn btn-brand" data-brand="samsung">Samsung</button>
+        <button class="btn btn-brand" data-brand="lg">LG</button>
+        <button class="btn btn-brand" data-brand="daikin">Daikin</button>
+        <button class="btn btn-brand" data-brand="whirlpool">Whirlpool</button>
+        <button class="btn btn-brand" data-brand="haier">Haier</button>
+        <button class="btn btn-brand" data-brand="gree">Gree</button>
+      </div>
+
+      <!-- Brand Logo Cards (Ye bilkul pehle jese hi rahenge) -->
+      <div class="row g-4 justify-content-center" id="brandCards">
+        <div class="col-6 col-md-4 col-lg-2 brand-card-wrap" data-brand="samsung">
+          <div class="brand-logo-card">
+            <i class="bi bi-badge-hd-fill brand-icon"></i>
+            <p>Samsung</p>
+            <span class="brand-badge">Smart AI</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 brand-card-wrap" data-brand="lg">
+          <div class="brand-logo-card">
+            <i class="bi bi-lightning-charge-fill brand-icon"></i>
+            <p>LG</p>
+            <span class="brand-badge">Inverter</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 brand-card-wrap" data-brand="daikin">
+          <div class="brand-logo-card">
+            <i class="bi bi-wind brand-icon"></i>
+            <p>Daikin</p>
+            <span class="brand-badge">Premium</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 brand-card-wrap" data-brand="whirlpool">
+          <div class="brand-logo-card">
+            <i class="bi bi-stars brand-icon"></i>
+            <p>Whirlpool</p>
+            <span class="brand-badge">5-Star</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 brand-card-wrap" data-brand="haier">
+          <div class="brand-logo-card">
+            <i class="bi bi-cpu-fill brand-icon"></i>
+            <p>Haier</p>
+            <span class="brand-badge">Eco</span>
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 brand-card-wrap" data-brand="gree">
+          <div class="brand-logo-card">
+            <i class="bi bi-thermometer-snow brand-icon"></i>
+            <p>Gree</p>
+            <span class="brand-badge">Budget</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========== PRODUCTS ========== -->
+  <section id="products" class="section-darker py-5">
+    <div class="container">
+
+      <div class="section-header text-center mb-5">
+        <p class="section-label">OUR CATALOG</p>
+        <h2 class="section-title">
+          Featured <span class="glow-text">Products</span>
+        </h2>
+      </div>
+
+      <div class="row g-4" id="productGrid"></div>
+
+    </div>
+  </section>
+
+  <!-- No Results Message -->
+  <div id="noProducts" class="text-center py-5 d-none">
+    <i class="bi bi-search" style="font-size:3rem;color:var(--cyan)"></i>
+    <p class="mt-3" style="color:#aaa">No products found for this brand.</p>
+  </div>
+  </div>
+
+
+  
+
+  <!-- ========== ABOUT US ========== -->
+  <section id="about" class="section-dark py-5">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="section-header text-center mb-5">
+        <p class="section-label">WHO WE ARE</p>
+        <h2 class="section-title">
+          About <span class="glow-text">COSY AC</span>
+        </h2>
+        <p class="section-sub">
+          Delivering smart, energy-efficient cooling solutions for modern living.
+        </p>
+      </div>
+
+      <div class="row align-items-center g-5">
+
+        <!-- Left Content -->
+        <div class="col-lg-6">
+          <div class="about-content">
+
+            <h3 class="text-cyan mb-4">
+              Premium Climate Control Since 2005
+            </h3>
+
+            <p class="about-text">
+              COSY AIRCONDITIONERS is a trusted destination for premium air
+              conditioning systems from globally recognized brands including
+              Samsung, LG, Daikin, Haier, Gree, and Whirlpool.
+            </p>
+
+            <p class="about-text">
+              We specialize in providing high-performance cooling solutions
+              designed for comfort, energy efficiency, and smart living.
+              From residential spaces to commercial environments, our products
+              combine advanced technology with modern design.
+            </p>
+
+            <!-- Features -->
+            <div class="row mt-4 g-3">
+
+              <div class="col-sm-6">
+                <div class="about-feature-card">
+                  <i class="bi bi-snow text-cyan"></i>
+                  <h6>Smart Cooling</h6>
+                  <p>AI-powered temperature optimization systems.</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="about-feature-card">
+                  <i class="bi bi-lightning-charge-fill text-cyan"></i>
+                  <h6>Energy Efficient</h6>
+                  <p>Advanced inverter technology for lower power usage.</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="about-feature-card">
+                  <i class="bi bi-shield-check text-cyan"></i>
+                  <h6>Trusted Quality</h6>
+                  <p>Reliable products backed by warranty and support.</p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="about-feature-card">
+                  <i class="bi bi-headset text-cyan"></i>
+                  <h6>24/7 Support</h6>
+                  <p>Dedicated customer assistance anytime you need.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual -->
+        <div class="col-lg-6">
+          <div class="about-visual-card">
+
+            <div class="about-glow-circle"></div>
+
+            <div class="about-device">
+              <i class="bi bi-wind"></i>
+            </div>
+
+            <div class="about-stats">
+
+              <div class="mini-stat">
+                <h4>50K+</h4>
+                <p>Happy Customers</p>
+              </div>
+
+              <div class="mini-stat">
+                <h4>10+</h4>
+                <p>Top Brands</p>
+              </div>
+
+              <div class="mini-stat">
+                <h4>20+</h4>
+                <p>Years Experience</p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer-section">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <a href="index.html" class="footer-link"><span class="brand-cosy">COSY</span><span
+              class="brand-ac">AC</span></a>
+          <p class="mt-2 text-light small">Premium Climate Control Since 2005</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <div class="d-flex justify-content-center gap-3">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="brand.html" class="footer-link">Brands</a>
+            <!-- <a href="#products" class="footer-link">Products</a> -->
+            <a href="Contact.html" class="footer-link">Contact</a>
+          </div>
+        </div>
+        <div class="col-md-4 text-end">
+          <p class="text-light small">&copy; 2026 COSY AIRCONDITIONERS. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
